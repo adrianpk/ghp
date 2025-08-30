@@ -1,0 +1,25 @@
+app:
+  prompt_path: "./prompts/prompt.txt"
+  out_dir: "./out"
+  repos_limit: 12
+  chunks_per_repo: 120
+  max_chunk_bytes: 1536
+  include_pinned: true
+  include_non_pinned: true
+  exclude_forks: true
+
+auth:
+  # Paste your personal GitHub token here.
+  # Or leave it empty and use the GITHUB_TOKEN environment variable
+  github_token: "github_pat_your_github_token"
+
+llm:
+  provider: "openai"
+  model: "gpt-4.1-mini"
+  api_key: ""      
+  endpoint: "" 
+  max_tokens: 800
+  temperature: 0.2
+  requests_per_minute: 120
+  parallel_requests: 4
+
